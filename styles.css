@@ -1,0 +1,52 @@
+/* font-family: 'Averia Sans Libre', sans-serif;
+font-family: 'Ingrid Darling', cursive;
+font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Quattrocento Sans', sans-serif;*/
+
+/*Global styling*/
+
+h1 {
+    font-family: 'Averia Sans Libre', sans-serif, 'Times New Roman', Times, serif;
+}
+h2, a {
+    font-family: 'Merriweather Sans', sans-serif, Arial, Helvetica, sans-serif;
+}
+h3 {
+    font-family: 'Ingrid Darling', cursive,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+
+font-family: 'Quattrocento Sans', sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+ a, ul, li {
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    padding: 0.2em;
+}
+
+:root {
+    --my-light-gold: #F4A910;
+    --my-dark-gold: #C19C4E;
+    --my-golden-black: #32312C;
+    --my-limestone: #AC7A57;
+    --my-sky-grey: #799AAD;
+    --my-sky-dark-grey: #5D686E;
+    --my-sky-blue: #6BBBEC;
+    --my-golden-frame: linear-gradient(
+        to bottom,
+        var(--my-light-gold),
+        var(--my-golden-black))
+    --my-shadow: 0px 8px 10px var(var(--my-golden-black)) 
+}
+
+#Headerflex ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4em;
+    background-color: var(--my-limestone);
+}
