@@ -1,0 +1,25 @@
+@import "/styles.css";
+
+/*styling images from the API call*/
+.api-image {
+  border: 2px solid;
+  border-image: var(--my-golden-frame) 1;
+  box-shadow: var(--my-shadow-lighter);
+  max-width: 200px;
+  margin: 0.5em;
+}
+
+p {
+  display: block;
+  font-weight: bolder;
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+.recipe-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
