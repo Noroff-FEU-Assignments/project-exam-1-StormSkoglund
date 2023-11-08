@@ -1,5 +1,9 @@
 @import "/styles.css";
 
+h1 {
+  text-align: center;
+}
+
 /*styling images from the API call*/
 .api-image {
   box-shadow: var(--my-shadow-lighter);
