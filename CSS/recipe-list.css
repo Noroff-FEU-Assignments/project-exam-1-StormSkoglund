@@ -16,16 +16,25 @@ h1 {
   border-image: var(--my-blue-frame) 1;
   box-shadow: var(--my-shadow-lighter);
   max-width: 200px;
-  height: 300px;
+  height: 320px;
   margin: 0.5em;
   padding: 0.2em;
+}
+p:hover {
+  font-weight: bolder;
+  text-shadow: var(--my-shadow-light);
+  transition-duration: 100ms;
 }
 
 p {
   display: block;
   font-weight: bolder;
   max-width: 200px;
+  max-height: fit-content;
   word-wrap: break-word;
+  text-shadow: none;
+  margin-bottom: 0.2em;
+  text-align: center;
 }
 
 .recipe-container {
