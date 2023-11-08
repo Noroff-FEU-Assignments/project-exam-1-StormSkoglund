@@ -9,9 +9,16 @@
   --my-sky-dark-grey: #5d686e;
   --my-sky-blue: #6bbbec;
   --my-white: #ede7da;
+  --my-border: 2px solid;
+  --my-border-thick: 3.5px solid;
   --my-golden-frame: linear-gradient(
     to bottom,
     var(--my-light-gold),
+    var(--my-golden-black)
+  );
+  --my-blue-frame: linear-gradient(
+    to bottom,
+    var(--my-sky-blue),
     var(--my-golden-black)
   );
   --my-shadow: 0px 15px 5px var(--my-sky-dark-grey);
@@ -67,7 +74,7 @@ a:hover {
 /*image from index page*/
 .cooking-scene {
   display: block;
-  border: 3.5px solid;
+  border: var(--my-border-thick);
   border-image: var(--my-golden-frame) 1; /* Here I have used a Gradient border-styling technique, available at https://stackoverflow.com/questions/2717127/how-to-do-gradient-borders-in-css[viewed on 6. November 2023]*/
   box-shadow: var(--my-shadow-light);
   margin: 0 auto;
@@ -128,7 +135,7 @@ span {
 }
 
 .teaser {
-  border: 3.5px solid;
+  border: var(--my-border-thick);
   border-image: var(--my-golden-frame) 1;
   padding: 1.5em;
   max-width: 20vw;
@@ -147,7 +154,7 @@ span {
 }
 
 main {
-  border: 3.5px solid;
+  border: var(--my-border-thick);
   border-image: var(--my-golden-frame) 1;
   padding: 1.5em;
   margin: 3em;

@@ -2,10 +2,17 @@
 
 /*styling images from the API call*/
 .api-image {
-  border: 2px solid;
-  border-image: var(--my-golden-frame) 1;
   box-shadow: var(--my-shadow-lighter);
   max-width: 200px;
+  margin: 0 auto;
+}
+/*styling both title and images*/
+.card {
+  border: var(--my-border);
+  border-image: var(--my-blue-frame) 1;
+  box-shadow: var(--my-shadow-lighter);
+  max-width: 200px;
+  height: 300px;
   margin: 0.5em;
 }
 
