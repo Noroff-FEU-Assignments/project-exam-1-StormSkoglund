@@ -72,7 +72,7 @@ a:hover {
 }
 
 /*image from index page*/
-.cooking-scene {
+.image-default {
   display: block;
   border: var(--my-border-thick);
   border-image: var(--my-golden-frame) 1; /* Here I have used a Gradient border-styling technique, available at https://stackoverflow.com/questions/2717127/how-to-do-gradient-borders-in-css[viewed on 6. November 2023]*/
@@ -134,7 +134,7 @@ span {
   font-size: medium;
 }
 
-.teaser {
+.article-framed {
   border: var(--my-border-thick);
   border-image: var(--my-golden-frame) 1;
   padding: 1.5em;
