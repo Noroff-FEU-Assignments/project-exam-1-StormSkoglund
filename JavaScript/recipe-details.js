@@ -26,8 +26,8 @@ async function renderRecipe() {
   console.log(myRecipe);
 
   if (myRecipe) {
-    articleContainer.innerHTML += `${myRecipe.content.rendered}`;
-    uniqueTitle.innerHTML = `${myRecipe.title.rendered}`;
+    articleContainer.innerHTML += `${myRecipe.content.rendered}`; //rendering full article with images and text from WP
+    uniqueTitle.innerHTML = `${myRecipe.title.rendered}`; // rendering unique title from API ID in HTML.
   }
 }
 

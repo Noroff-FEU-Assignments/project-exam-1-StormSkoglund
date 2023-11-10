@@ -1,0 +1,29 @@
+@import "/styles.css";
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 50vw;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  row-gap: 1.5em;
+  border: var(--my-border) var(--my-light-gold);
+  box-shadow: var(--my-shadow-lighter);
+  padding: 2em;
+}
+
+.button {
+  background-color: var(--my-limestone);
+  color: var(--my-white);
+  font-family: "Merriweather Sans", sans-serif, Arial, Helvetica, sans-serif;
+  padding: 0.5em;
+  border: var(--my-border);
+  border-image: var(--my-golden-frame) 1;
+  box-shadow: var(--my-shadow-light);
+}

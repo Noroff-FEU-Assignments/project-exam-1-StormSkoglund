@@ -55,7 +55,7 @@ p {
 }
 
 .no-decor,
-a {
+.regular-anchor {
   display: inline;
   text-decoration: none;
   list-style: none;
