@@ -43,6 +43,10 @@ h3 {
   text-shadow: var(--my-shadow-lighter);
 }
 
+body {
+  background-color: var(--my-white);
+}
+
 p {
   font-family: "Quattrocento Sans", sans-serif, "Trebuchet MS",
     "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -50,9 +54,8 @@ p {
   color: var(--my-golden-black);
 }
 
-a,
-ul,
-li {
+.no-decor,
+a {
   display: inline;
   text-decoration: none;
   list-style: none;
@@ -116,6 +119,7 @@ span {
 #insta {
   color: var(--my-light-gold);
   font-weight: 500;
+  opacity: calc(70%);
 }
 
 .blog-name {
