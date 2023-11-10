@@ -1,4 +1,5 @@
 const articleContainer = document.querySelector(".article-container");
+const uniqueTitle = document.getElementById("unique-title");
 
 // search params to Fetch ID from specific blogpost(recipe)
 const queryString = document.location.search;
@@ -26,6 +27,7 @@ async function renderRecipe() {
 
   if (myRecipe) {
     articleContainer.innerHTML += `${myRecipe.content.rendered}`;
+    uniqueTitle.innerHTML = `${myRecipe.title.rendered}`;
   }
 }
 
