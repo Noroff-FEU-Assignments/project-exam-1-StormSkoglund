@@ -10,7 +10,7 @@
   --my-sky-blue: #6bbbec;
   --my-white: #ede7da;
   --my-border: 2px solid;
-  --my-border-thick: 3.5px solid;
+  --my-border-thick: 3px solid;
   --my-golden-frame: linear-gradient(
     to bottom,
     var(--my-light-gold),
