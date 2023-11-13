@@ -10,6 +10,12 @@ h1 {
   max-width: 200px;
   margin: 0 auto;
 }
+
+.card:hover {
+  box-shadow: var(--my-shadow);
+  transition-duration: 100ms;
+}
+
 /*styling both title and images*/
 .card {
   border: var(--my-border);
