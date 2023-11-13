@@ -2,7 +2,7 @@
 
 .wp-block-image img {
   display: block;
-  max-width: 50vw;
+  max-width: 90%;
   height: auto;
   margin: 0 auto;
   border: var(--my-border);
