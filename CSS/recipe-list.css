@@ -12,8 +12,8 @@ h1 {
 }
 
 .card:hover {
-  box-shadow: var(--my-shadow);
-  transition-duration: 100ms;
+  box-shadow: var(--my-shadow-card);
+  transition-duration: 300ms;
 }
 
 /*styling both title and images*/
@@ -49,4 +49,8 @@ p {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
 }
