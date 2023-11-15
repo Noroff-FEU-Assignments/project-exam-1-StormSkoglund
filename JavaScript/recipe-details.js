@@ -32,3 +32,10 @@ async function renderRecipe() {
 }
 
 renderRecipe();
+
+function renderModal() {
+  const modalElement = document.querySelector(".wp-block-image img");
+  modalElement.addEventListener("click", modalOpen);
+}
+
+function modalOpen() {}

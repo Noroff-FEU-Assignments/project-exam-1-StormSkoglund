@@ -14,6 +14,9 @@ h1 {
 .card:hover {
   box-shadow: var(--my-shadow-card);
   transition-duration: 300ms;
+  transform: scale(
+    105%
+  ); /*Image scale on hover, available at https://www.w3schools.com/howto/howto_css_zoom_hover.asp[viewed on 15. november 2023]*/
 }
 
 /*styling both title and images*/
@@ -25,6 +28,7 @@ h1 {
   height: 320px;
   margin: 0.5em;
   padding: 0.2em;
+  transition: transform;
 }
 p:hover {
   font-weight: bolder;
