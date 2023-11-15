@@ -17,13 +17,3 @@ form {
   box-shadow: var(--my-shadow-lighter);
   padding: 2em;
 }
-
-.button {
-  background-color: var(--my-limestone);
-  color: var(--my-white);
-  font-family: "Merriweather Sans", sans-serif, Arial, Helvetica, sans-serif;
-  padding: 0.5em;
-  border: var(--my-border);
-  border-image: var(--my-golden-frame) 1;
-  box-shadow: var(--my-shadow-light);
-}

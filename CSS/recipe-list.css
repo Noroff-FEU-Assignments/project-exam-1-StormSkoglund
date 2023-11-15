@@ -58,3 +58,8 @@ p {
 a {
   text-decoration: none;
 }
+
+#show-more {
+  position: relative;
+  float: right;
+}

@@ -75,6 +75,16 @@ a:hover {
   text-shadow: var(--my-shadow-lighter);
 }
 
+.button {
+  background-color: var(--my-limestone);
+  color: var(--my-white);
+  font-family: "Merriweather Sans", sans-serif, Arial, Helvetica, sans-serif;
+  padding: 0.5em;
+  border: var(--my-border);
+  border-image: var(--my-golden-frame) 1;
+  box-shadow: var(--my-shadow-light);
+}
+
 /*image from index page*/
 .image-default {
   display: block;
