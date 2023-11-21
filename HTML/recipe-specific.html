@@ -19,6 +19,7 @@
       src="https://kit.fontawesome.com/d95d8ef02a.js"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="/JavaScript/recipe-details.js"></script>
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/CSS/recipe-specific.css" />
   </head>
@@ -27,9 +28,7 @@
       <nav>
         <ul>
           <li class="no-decor">
-            <a class="regular-anchor" href="/index.html"
-              ><strong>Home</strong></a
-            >
+            <a class="regular-anchor" href="/index.html">Home</a>
           </li>
           <li class="no-decor">
             <a class="regular-anchor" href="/HTML/recipes.html"
@@ -55,7 +54,13 @@
     ><span
       ><h2 class="slogan">-A blog about FOOD throughout the ages.</h2></span
     >
-    <main><article class="article-container"></article></main>
+    <main>
+      <article class="article-container">
+        <div id="loading" style="display: block">Loading...</div>
+        <div class="error"></div>
+      </article>
+      <dialog data-modal class="image-modal"></dialog>
+    </main>
     <footer id="Footerflex">
       <span>A blog about food throughout the ages.</span>
       <span>&copy;2023 Ancient Recipes by Alex Storm Skoglund</span
@@ -66,6 +71,5 @@
         ></a>
       </span>
     </footer>
-    <script src="/JavaScript/recipe-details.js"></script>
   </body>
 </html>

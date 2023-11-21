@@ -17,3 +17,26 @@ form {
   box-shadow: var(--my-shadow-lighter);
   padding: 2em;
 }
+
+input,
+textarea {
+  font-family: "Quattrocento Sans", sans-serif, "Trebuchet MS",
+    "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+  color: var(--my-golden-black);
+  border: 1.5px solid var(--my-golden-black);
+  box-shadow: var(--my-shadow-lighter);
+  padding: 0.5em;
+}
+
+label {
+  color: var(--my-golden-black);
+  font-size: medium;
+  font-family: "Merriweather Sans", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+form,
+p {
+  color: red;
+  font-size: smaller;
+}

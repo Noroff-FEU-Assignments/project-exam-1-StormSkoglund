@@ -16,7 +16,7 @@ h1 {
   transition-duration: 300ms;
   transform: scale(
     105%
-  ); /*Image scale on hover, available at https://www.w3schools.com/howto/howto_css_zoom_hover.asp[viewed on 15. november 2023]*/
+  ); /*Image scale on hover, available at https://www.w3schools.com/howto/howto_css_zoom_hover.asp[viewed on nov. 15. 2023]*/
 }
 
 /*styling both title and images*/

@@ -1,5 +1,7 @@
 @import "/styles.css";
 
+/*Image from API*/
+
 .wp-block-image img {
   display: block;
   max-width: 90%;
@@ -38,4 +40,9 @@ list {
 h1 {
   font-size: xx-large;
   text-align: center;
+}
+
+.image-modal {
+  display: block;
+  max-width: 95vw;
 }

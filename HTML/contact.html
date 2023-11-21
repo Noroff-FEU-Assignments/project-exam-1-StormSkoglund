@@ -55,24 +55,30 @@
     >
     <h1>Contact</h1>
     <main>
-      <form>
-        <label for="name" class="name">Name: </label>
-        <input type="text" id="name" />
-
-        <label for="email">Email Adress</label>
+      <form id="contact">
+        <label for="nameInput" class="name">Name </label>
+        <input type="text" id="nameInput" />
+        <p id="nameError"></p>
+        <label for="emailInput">Email Address</label>
         <input
           type="text"
-          id="email"
+          id="emailInput"
           placeholder="Example@mail.com"
           class="Email"
         />
-        <label for="subject" class="subjectform">Subject</label>
-        <input type="text" id="subject" />
-        <label for="message">Info</label>
-        <textarea id="message" name="message" cols="40" rows="20">
-What do you have on your mind?</textarea
-        >
-        <a class="button">Submit your message</a>
+        <p id="emailError"></p>
+        <label for="subjectInput" class="subjectform">Subject</label>
+        <textarea type="text" id="subjectInput" cols="20" rows="2"></textarea>
+        <p id="subjectError"></p>
+        <label for="messageBox">Info</label>
+        <textarea
+          id="messageBox"
+          name="messageBox"
+          cols="30"
+          rows="20"
+        ></textarea>
+        <p id="messageError"></p>
+        <button class="button">Submit</button>
       </form>
     </main>
     <footer id="Footerflex">
@@ -85,5 +91,6 @@ What do you have on your mind?</textarea
         ></a>
       </span>
     </footer>
+    <script src="/JavaScript/contact.js"></script>
   </body>
 </html>

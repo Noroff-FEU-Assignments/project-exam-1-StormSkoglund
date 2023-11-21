@@ -55,7 +55,10 @@
     >
     <main>
       <h1>Embark on a culinary journey through the history of mankind.</h1>
-      <section class="recipe-container"></section>
+      <section class="recipe-container">
+        <div id="loading" style="display: block">Loading...</div>
+      </section>
+      <div class="error"></div>
       <button class="button" id="show-more">SHOW MORE POSTS</button>
     </main>
     <footer id="Footerflex">
@@ -68,6 +71,6 @@
         ></a>
       </span>
     </footer>
-    <script src="/JavaScript/recipe-list.js"></script>
+    <script type="module" src="/JavaScript/recipe-list.js"></script>
   </body>
 </html>

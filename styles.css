@@ -80,16 +80,21 @@ a:hover {
   color: var(--my-white);
   font-family: "Merriweather Sans", sans-serif, Arial, Helvetica, sans-serif;
   padding: 0.5em;
-  border: var(--my-border);
-  border-image: var(--my-golden-frame) 1;
   box-shadow: var(--my-shadow-light);
+  border: var(--my-border) var(--my-golden-black);
+}
+
+.button:hover {
+  padding: 1em;
+  box-shadow: var(--my-shadow-card);
+  transition: 400ms;
 }
 
 /*image from index page*/
 .image-default {
   display: block;
   border: var(--my-border-thick);
-  border-image: var(--my-golden-frame) 1; /* Here I have used a Gradient border-styling technique, available at https://stackoverflow.com/questions/2717127/how-to-do-gradient-borders-in-css[viewed on 6. November 2023]*/
+  border-image: var(--my-golden-frame) 1; /* Here I have used a Gradient border-styling technique, available at https://stackoverflow.com/questions/2717127/how-to-do-gradient-borders-in-css[viewed on Nov 6., 2023]*/
   box-shadow: var(--my-shadow-light);
   margin: 0 auto;
   max-width: 20vw;
@@ -163,7 +168,7 @@ span {
 }
 
 .teaser span {
-  display: table; /*here I am using dislay table and a padding of 0.5em, to create breaks in the article, without using the <br> tag. available at https://careerkarma.com/blog/css-line-break/[viewed on 6. november 2023]*/
+  display: table; /*here I am using dislay table and a padding of 0.5em, to create breaks in the article, without using the <br> tag. available at https://careerkarma.com/blog/css-line-break/[viewed on nov 6. 2023]*/
   padding: 0.5em;
   font-size: large;
 }
@@ -173,5 +178,49 @@ main {
   border-image: var(--my-golden-frame) 1;
   padding: 1.5em;
   margin: 3em;
+  box-shadow: var(--my-shadow-lighter);
+}
+
+/*Loading screen and animation*/
+
+#loading,
+#loader {
+  font-family: "Ingrid Darling", cursive, "Franklin Gothic Medium",
+    "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+  color: var(--my-golden-black);
+  font-weight: 700;
+  animation: jump 1000ms infinite;
+  text-align: center;
+}
+
+@keyframes jump {
+  0% {
+    padding: 0.5em;
+    text-shadow: 2px 5px 15px var(--my-golden-black);
+  }
+  50% {
+    padding: 0.7em;
+    text-shadow: 2px 35px 15px var(--my-golden-black);
+  }
+  100% {
+    padding: 0.5em;
+    text-shadow: 2px 5px 15px var(--my-golden-black);
+  }
+}
+/* error message */
+.error {
+  font-family: "Quattrocento Sans", sans-serif, "Trebuchet MS",
+    "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: larger;
+  color: red;
+}
+
+/*formatting date and time from API calls*/
+
+.date {
+  font-size: x-small;
+  border: 1.5px solid var(--my-dark-gold);
+  opacity: 90%;
   box-shadow: var(--my-shadow-lighter);
 }
