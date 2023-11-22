@@ -63,3 +63,7 @@ a {
   position: relative;
   float: right;
 }
+
+.error {
+  text-align: center;
+}

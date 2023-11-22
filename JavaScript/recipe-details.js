@@ -54,7 +54,7 @@ async function renderRecipe() {
 
 renderRecipe();
 
-/* // Building a Modal.
+/*// Building a Modal.
 async function fetchImageForModal() {
   const fetchModalImage = await fetchRecipe();
   if (fetchModalImage) {
