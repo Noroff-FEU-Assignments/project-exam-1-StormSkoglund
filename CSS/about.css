@@ -27,3 +27,11 @@ figure {
 p {
   display: table;
 }
+
+#disclaimer p {
+  max-width: 50vw;
+  font-size: smaller;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.5em;
+}
