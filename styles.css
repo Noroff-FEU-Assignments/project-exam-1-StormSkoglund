@@ -63,6 +63,7 @@ p {
   padding: 0.2em;
   color: var(--my-white);
   text-shadow: 0px 3px 5px var(--my-golden-black);
+  font-size: 20px;
 }
 
 a:hover {
@@ -88,6 +89,7 @@ a:hover {
   padding: 1em;
   box-shadow: var(--my-shadow-card);
   transition: 400ms;
+  cursor: pointer;
 }
 
 /*image from index page*/
@@ -220,7 +222,8 @@ main {
 
 .date {
   font-size: x-small;
-  border: 1.5px solid var(--my-dark-gold);
-  opacity: 90%;
+  font-weight: bold;
+  border: 2px solid var(--my-sky-blue);
+  opacity: 95%;
   box-shadow: var(--my-shadow-lighter);
 }

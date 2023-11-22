@@ -13,7 +13,7 @@ form {
   flex-wrap: wrap;
   margin: 0 auto;
   row-gap: 1.5em;
-  border: var(--my-border) var(--my-light-gold);
+  border: var(--my-border) var(--my-sky-blue);
   box-shadow: var(--my-shadow-lighter);
   padding: 2em;
 }
@@ -24,7 +24,7 @@ textarea {
     "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: large;
   color: var(--my-golden-black);
-  border: 1.5px solid var(--my-golden-black);
+  border: 2px solid var(--my-sky-blue);
   box-shadow: var(--my-shadow-lighter);
   padding: 0.5em;
 }
