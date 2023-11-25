@@ -71,25 +71,6 @@ showMorePosts.addEventListener("click", function addingPages() {
   showMore();
 });
 
-/*function testClick() {
-  try {
-    let counts = JSON.parse(
-      localStorage.getItem("click", JSON.stringify(clickCount))
-    );
-    console.log(counts);
-    if (counts) {
-      //there is a problem with this counter!!!!!!!
-      
-    } else {
-      throw new Error(
-        "You have reached the end of my recipe list for now, but don’t worry, I am cooking up some more delicious dishes for you. Stay tuned!."
-      );
-    }
-  } catch (error) {
-    tryCatchError(error.message);
-  }
-}*/
-
 // Here I change the url to switch the page of posts, to allow more than ten recipes to be rendered
 
 async function showMore() {
@@ -125,7 +106,3 @@ async function showMore() {
     tryCatchSecondError(error.noMorePosts);
   }
 }
-
-/*if (clicksCounted >= 3) {
-  showMorePosts.disabled = true; //I am disabling the button to prevent spamming, solution found at https://www.altcademy.com/blog/how-to-disable-a-button-in-javascript/[viewed on Nov 15. 2023].
-}*/

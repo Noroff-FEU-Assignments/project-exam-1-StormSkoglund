@@ -40,3 +40,67 @@ p {
   color: red;
   font-size: smaller;
 }
+
+@media only screen and (max-width: 850px) and (min-width: 650px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    max-width: 50vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    row-gap: 0.8em;
+    border: var(--my-border) var(--my-sky-blue);
+    box-shadow: var(--my-shadow-lighter);
+    padding: 1em;
+  }
+}
+
+@media only screen and (max-width: 649px) and (min-width: 450px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    max-width: 50vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    row-gap: 0.2em;
+    border: var(--my-border) var(--my-sky-blue);
+    box-shadow: var(--my-shadow-lighter);
+    padding: 1em;
+  }
+  input,
+  textarea {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    max-width: 100vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    row-gap: 0.2em;
+    border: var(--my-border) var(--my-sky-blue);
+    box-shadow: var(--my-shadow-lighter);
+    padding: 1em;
+  }
+  input,
+  textarea {
+    font-size: x-small;
+    max-width: 30vw;
+    max-height: 10vh;
+  }
+
+  label {
+    color: var(--my-golden-black);
+    font-size: smaller;
+    font-family: "Merriweather Sans", sans-serif, Arial, Helvetica, sans-serif;
+  }
+}

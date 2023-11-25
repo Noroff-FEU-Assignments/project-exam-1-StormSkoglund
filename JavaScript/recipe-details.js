@@ -1,7 +1,7 @@
 const articleContainer = document.querySelector(".article-container");
 const uniqueTitle = document.getElementById("unique-title");
 const modalContainer = document.querySelector(".image-modal");
-const modalClick = document.querySelector("img");
+/*const modalClick = document.querySelector(".image1");*/
 
 // Error renderering function, this works in combination with the Try Catch statement below
 function tryCatchError(message) {
@@ -54,19 +54,31 @@ async function renderRecipe() {
 
 renderRecipe();
 
-/*// Building a Modal.
+// Building a Modal.
 async function fetchImageForModal() {
-  const fetchModalImage = await fetchRecipe();
-  if (fetchModalImage) {
-    const modalImage = fetchModalImage;
-    modalContainer.innerHTML = `<img id="${modalImage.better_featured_image.id}" src"${modalImage.better_featured_image.source_url}"</img>`;
+  try {
+    const fetchModalImage = await fetchRecipe();
+    if (fetchModalImage) {
+      const parser = new DOMParser(); // Added a DOMparser to parse the Wordpress HTML from the content.rendered, in order to return the image embeded in the HTML. This method was shown to me on Teams, by co-student Mathias Tinberg [viewed on 24. Nov 2023]
+      const doc = parser.parseFromString(
+        fetchModalImage.content.rendered,
+        "text/html"
+      );
+      const image = doc.querySelector("img");
+
+      console.log(image);
+      modalContainer.appendChild(image); // Using appendchild (instead of innerHTML) since it fixes a problem with the image HTML element from the DOMparser. Solution available at https://stackoverflow.com/questions/36121542/getting-object-htmlimageelement-instead-of-the-image[viewed on 24. Nov 2023]
+
+      image.addEventListener("click", modalOpen); // THIS ISN't WORKING YET.
+    }
+  } catch (error) {
+    tryCatchError(error.message);
   }
 }
+
 fetchImageForModal();
 
-//Show modal when clicking on an image
-modalClick.addEventListener("click", modalOpen);
-
-function modalOpen() {
+async function modalOpen() {
+  await fetchImageForModal();
   modalContainer.showModal();
-}*/
+}

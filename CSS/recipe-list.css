@@ -67,3 +67,54 @@ a {
 .error {
   text-align: center;
 }
+
+@media only screen and (max-width: 620px) and (min-width: 400px) {
+  h1 {
+    font-size: large;
+  }
+
+  .card {
+    max-width: fit-content;
+    max-height: 200px;
+    margin: 0.2em;
+    padding: 0.1em;
+  }
+
+  .api-image {
+    box-shadow: var(--my-shadow-lighter);
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+  p {
+    max-width: 100px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  h1 {
+    font-size: medium;
+  }
+  .card {
+    max-width: fit-content;
+    max-height: 180px;
+    margin: 0.2em;
+    padding: 0.1em;
+  }
+
+  .api-image {
+    box-shadow: var(--my-shadow-lighter);
+    max-width: 80px;
+    margin: 0 auto;
+  }
+
+  p {
+    max-width: 80px;
+    font-size: 8px;
+  }
+
+  main {
+    margin: 0;
+  }
+}

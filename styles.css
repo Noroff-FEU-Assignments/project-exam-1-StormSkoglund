@@ -92,6 +92,14 @@ a:hover {
   cursor: pointer;
 }
 
+/*Flex container for index main*/
+.front-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
 /*image from index page*/
 .image-default {
   display: block;
@@ -160,7 +168,8 @@ span {
   border: var(--my-border-thick);
   border-image: var(--my-golden-frame) 1;
   padding: 1.5em;
-  max-width: 20vw;
+  max-width: 40vw;
+  max-height: fit-content;
   margin: 1em;
 }
 
