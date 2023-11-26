@@ -5,6 +5,13 @@ const carouselContent = document.getElementById("carousel-recipes");
 const loader = document.querySelector(".loader");
 const next = document.querySelector(".next");
 const previous = document.querySelector(".previous");
+const hamburgerMenu = document.querySelector("#Headerflex label i");
+
+hamburgerMenu.addEventListener("click", function () {
+  const navList = document.getElementById("nav-list");
+  const navOpen = document.getElementById("nav-list");
+  navList.style.visibility = "visible";
+});
 
 carouselRecipe();
 

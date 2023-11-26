@@ -22,6 +22,17 @@ ul li {
 }
 
 .article-container a {
+  font-family: "Quattrocento Sans", sans-serif, "Trebuchet MS",
+    "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  color: var(--my-golden-black);
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.article-container strong {
+  font-family: "Quattrocento Sans", sans-serif, "Trebuchet MS",
+    "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
   color: var(--my-golden-black);
   font-weight: 200;
@@ -66,6 +77,11 @@ h1 {
   .article-container a {
     font-size: 10px;
   }
+
+  .article-container strong {
+    font-size: 10px;
+    font-weight: bold;
+  }
 }
 
 @media only screen and (max-width: 399px) {
@@ -86,5 +102,10 @@ h1 {
 
   .article-container a {
     font-size: 10px;
+  }
+
+  .article-container strong {
+    font-size: 10px;
+    font-weight: bold;
   }
 }

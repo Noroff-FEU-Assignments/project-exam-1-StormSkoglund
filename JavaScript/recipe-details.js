@@ -47,6 +47,16 @@ async function renderRecipe() {
       articleContainer.innerHTML += ` <h1>${myRecipe.title.rendered}</h1> ${myRecipe.content.rendered}`; //rendering full article with images and text from WP.
       uniqueTitle.innerHTML = `${myRecipe.title.rendered}`; // rendering unique title from API ID in HTML.
     }
+    //selecting images for the modal.
+    const images = document.querySelectorAll("img");
+
+    images.forEach((image) => {
+      image.addEventListener("click", function () {
+        const clickImage = event.target.src;
+        console.log(clickImage);
+        createModal(clickImage);
+      });
+    });
   } catch (error) {
     tryCatchError(error.message);
   }
@@ -54,31 +64,17 @@ async function renderRecipe() {
 
 renderRecipe();
 
-// Building a Modal.
-async function fetchImageForModal() {
-  try {
-    const fetchModalImage = await fetchRecipe();
-    if (fetchModalImage) {
-      const parser = new DOMParser(); // Added a DOMparser to parse the Wordpress HTML from the content.rendered, in order to return the image embeded in the HTML. This method was shown to me on Teams, by co-student Mathias Tinberg [viewed on 24. Nov 2023]
-      const doc = parser.parseFromString(
-        fetchModalImage.content.rendered,
-        "text/html"
-      );
-      const image = doc.querySelector("img");
+function createModal(src) {
+  // Here I am creating the dialog together with the selected images in event.taget.src, then appending them to the DOM.
+  const modal = document.createElement("dialog");
+  document.querySelector("main").append(modal);
 
-      console.log(image);
-      modalContainer.appendChild(image); // Using appendchild (instead of innerHTML) since it fixes a problem with the image HTML element from the DOMparser. Solution available at https://stackoverflow.com/questions/36121542/getting-object-htmlimageelement-instead-of-the-image[viewed on 24. Nov 2023]
-
-      image.addEventListener("click", modalOpen); // THIS ISN't WORKING YET.
-    }
-  } catch (error) {
-    tryCatchError(error.message);
-  }
-}
-
-fetchImageForModal();
-
-async function modalOpen() {
-  await fetchImageForModal();
-  modalContainer.showModal();
+  const modalImage = document.createElement("img");
+  modalImage.setAttribute("src", src); //Setting modal image attributes to match the event.target.src attribute from the clicked image, in order to copy its source.
+  modal.append(modalImage);
+  modal.showModal(); //showModal method available at https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal[Viewed Nov 26. 2023]
+  modal.addEventListener("mouseout", function () {
+    // mouseout used for exiting the Modal, available at https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseout_event[Viewed on Nov 26. 2023]
+    modal.close();
+  });
 }

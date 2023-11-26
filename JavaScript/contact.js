@@ -30,23 +30,28 @@ function checkValidation(event) {
   if (subjectInput.value.trim().length < 15) {
     subjectError.innerHTML = `Subject text needs to be at least 15 characters long.`;
   } else {
-    nameError.innerHTML = "";
+    subjectError.innerHTML = "";
   }
 
   if (messageBox.value.trim().length < 25) {
     messageError.innerHTML = `Your message needs to be at least 25 characters long.`;
   } else {
-    nameError.innerHTML = "";
+    messageError.innerHTML = "";
   }
 
   // I am using the same method for validating email as in JavaScript module 4.
   if (validateEmail(emailInput.value) === false) {
     emailError.innerHTML = `Not a valid email address.`;
   } else {
-    nameError.innerHTML = "";
+    emailError.innerHTML = "";
   }
 
-  if (checkValidation) {
+  if (
+    nameInput.value.trim().length >= 5 &&
+    subjectInput.value.trim().length >= 15 &&
+    messageBox.value.trim().length >= 25 &&
+    validateEmail(emailInput.value) === true
+  ) {
     window.alert(
       "Thank you for submission, I will read your message as soon as possible."
     );

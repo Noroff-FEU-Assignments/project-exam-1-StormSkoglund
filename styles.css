@@ -173,6 +173,11 @@ span {
   margin: 1em;
 }
 
+.article-framed span {
+  display: table;
+  padding: 0.8em;
+}
+
 .teaser h1 {
   display: block;
   text-align: center;
@@ -235,4 +240,111 @@ main {
   border: 2px solid var(--my-sky-blue);
   opacity: 95%;
   box-shadow: var(--my-shadow-lighter);
+}
+
+#Headerflex label i {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  .article-framed {
+    padding: 1em;
+    max-width: 60vw;
+  }
+
+  #Headerflex ul {
+    visibility: visible;
+  }
+
+  .article-framed img {
+    max-width: 20em;
+    position: relative;
+    float: left;
+  }
+
+  .pyramid {
+    width: 80px;
+  }
+
+  .slogan {
+    font-size: smaller;
+  }
+
+  footer span {
+    font-size: 10px;
+  }
+
+  footer a {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 599px) and (min-width: 450px) {
+  .article-framed {
+    padding: 0.2em;
+    max-width: 80vw;
+  }
+  #Headerflex ul {
+    visibility: visible;
+  }
+
+  .article-framed img {
+    max-width: 95%;
+  }
+
+  .pyramid {
+    width: 50px;
+  }
+
+  .slogan {
+    font-size: 10px;
+  }
+
+  .article-framed span {
+    display: table;
+    font-size: 8px;
+    padding: 0.5em;
+  }
+
+  footer span {
+    font-size: 8px;
+  }
+
+  footer a {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  #nav-list {
+    visibility: hidden;
+  }
+
+  #Headerflex ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    border: solid 3px var(--my-golden-black);
+    background-color: var(--my-limestone);
+    box-shadow: var(--my-shadow);
+    max-height: 9px;
+    flex-wrap: nowrap;
+    max-height: fit-content;
+    max-width: fit-content;
+    position: absolute;
+    top: 3em;
+    opacity: 85%;
+  }
+
+  #Headerflex label i {
+    display: block;
+    background-color: var(--my-sky-grey);
+    position: relative;
+    transform: none;
+    float: inline-start;
+    margin: 0.5em;
+    box-shadow: var(--my-shadow-lighter);
+  }
 }
