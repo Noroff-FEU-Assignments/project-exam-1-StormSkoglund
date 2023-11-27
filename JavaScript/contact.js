@@ -15,6 +15,22 @@ const subjectError = document.querySelector("#subjectError");
 const messageBox = document.querySelector("#messageBox");
 const messageError = document.querySelector("#messageError");
 const contactForm = document.getElementById("contact");
+const hamburgerMenu = document.getElementById("burger");
+const navList = document.getElementById("nav-list");
+const clickClose = document.getElementById("click-close");
+
+//hamburger menu open
+hamburgerMenu.addEventListener("click", function () {
+  navList.style.visibility = "visible";
+  clickClose.style.visibility = "visible";
+  hamburgerMenu.style.visibility = "hidden";
+});
+//hamburger menu close
+clickClose.addEventListener("click", function () {
+  navList.style.visibility = "hidden";
+  clickClose.style.visibility = "hidden";
+  hamburgerMenu.style.visibility = "visible";
+});
 
 function checkValidation(event) {
   //I will be using the same event.preventDefault as is used in JavaScript 1, module 4, to prevent that the default HTML for the form refreshes the page, when submitting the user inputs.

@@ -43,7 +43,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 14px;
+  /*padding: 14px;
   color: var(--my-gold-black);
   font-size: small;
   font-weight: bold;
@@ -52,7 +52,7 @@
   user-select: none;
   cursor: pointer;
   background-color: var(--my-light-gold);
-  opacity: 80%;
+  opacity: 80%;*/
 }
 
 .fa-arrow-right {

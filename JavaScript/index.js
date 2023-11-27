@@ -5,12 +5,21 @@ const carouselContent = document.getElementById("carousel-recipes");
 const loader = document.querySelector(".loader");
 const next = document.querySelector(".next");
 const previous = document.querySelector(".previous");
-const hamburgerMenu = document.querySelector("#Headerflex label i");
+const hamburgerMenu = document.getElementById("burger");
+const navList = document.getElementById("nav-list");
+const clickClose = document.getElementById("click-close");
 
+//hamburger menu open
 hamburgerMenu.addEventListener("click", function () {
-  const navList = document.getElementById("nav-list");
-  const navOpen = document.getElementById("nav-list");
   navList.style.visibility = "visible";
+  clickClose.style.visibility = "visible";
+  hamburgerMenu.style.visibility = "hidden";
+});
+//hamburger menu close
+clickClose.addEventListener("click", function () {
+  navList.style.visibility = "hidden";
+  clickClose.style.visibility = "hidden";
+  hamburgerMenu.style.visibility = "visible";
 });
 
 carouselRecipe();

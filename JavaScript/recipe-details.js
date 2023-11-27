@@ -1,6 +1,22 @@
 const articleContainer = document.querySelector(".article-container");
 const uniqueTitle = document.getElementById("unique-title");
 const modalContainer = document.querySelector(".image-modal");
+const hamburgerMenu = document.getElementById("burger");
+const navList = document.getElementById("nav-list");
+const clickClose = document.getElementById("click-close");
+
+//hamburger menu open
+hamburgerMenu.addEventListener("click", function () {
+  navList.style.visibility = "visible";
+  clickClose.style.visibility = "visible";
+  hamburgerMenu.style.visibility = "hidden";
+});
+//hamburger menu close
+clickClose.addEventListener("click", function () {
+  navList.style.visibility = "hidden";
+  clickClose.style.visibility = "hidden";
+  hamburgerMenu.style.visibility = "visible";
+});
 /*const modalClick = document.querySelector(".image1");*/
 
 // Error renderering function, this works in combination with the Try Catch statement below
