@@ -64,7 +64,16 @@ h1 {
   box-shadow: var(--my-shadow-light);
 }
 
-@media only screen and (max-width: 900px) and (min-width: 400px) {
+@media only screen and (max-width: 1150px) and (min-width: 400px) {
+  dialog {
+    max-width: 80%;
+  }
+
+  dialog img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
   .article-container {
     font-size: 10px;
     max-width: fit-content;
@@ -85,6 +94,14 @@ h1 {
 }
 
 @media only screen and (max-width: 399px) {
+  dialog {
+    max-width: 80%;
+  }
+
+  dialog img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
   .article-container {
     font-size: 8px;
     margin: 0em;

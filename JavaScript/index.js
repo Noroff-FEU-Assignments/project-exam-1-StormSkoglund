@@ -1,10 +1,9 @@
 import { carouselRecipe } from "./modules/fetch-recipes.js";
 import { tryCatchError } from "./modules/trycatcherror.js";
-
-const carouselContent = document.getElementById("carousel-recipes");
+const carouselSpinner = document.getElementById("spinner");
 const loader = document.querySelector(".loader");
-const next = document.querySelector(".next");
-const previous = document.querySelector(".previous");
+const next = document.getElementById("next");
+const previous = document.getElementById("previous");
 const hamburgerMenu = document.getElementById("burger");
 const navList = document.getElementById("nav-list");
 const clickClose = document.getElementById("click-close");
@@ -33,19 +32,7 @@ async function renderRecipes() {
     const posts = recipePosts;
 
     posts.forEach((post) => {
-      /*here I am using a method to render the date in more user friendly format, than the one that is fetched from the API. Available at https://stackoverflow.com/questions/58791663/how-to-modify-date-format-taken-from-wordpress-api[Viewed Nov 17. 2023]. And at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString[Viewed Nov 17. 2023]   */
-      let renderDateFormatted = new Date(post.date).toLocaleDateString(
-        "en-US",
-        {
-          year: "numeric",
-          month: "long",
-          day: "2-digit",
-          hour: "2-digit",
-          minute: "2-digit",
-          hour12: false,
-        }
-      );
-      carouselContent.innerHTML += `<a href="recipe-specific.html?id=${post.id}"><div id="card"><img class="api-image" src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.alt_text}"><p class="date">Posted on: ${renderDateFormatted}</p></img><p>${post.title.rendered}</p></div></a>`; //Sorting out images from the media endpoint for rendering.  I am using the plugin "Better REST API Featured Images" for better access to images.
+      carouselSpinner.innerHTML += `<img class="api-image" src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.alt_text}">`; //Sorting out images from the media endpoint for rendering.  I am using the plugin "Better REST API Featured Images" for better access to images.
     });
   } catch (error) {
     tryCatchError(error.message);
@@ -56,12 +43,34 @@ renderRecipes();
 
 tryCatchError();
 
-next.addEventListener("click", goLeft);
+//carousel from Codepen
+
+var angle = 0;
+function galleryspin(sign) {
+  spinner = document.querySelector("#spinner");
+  if (!sign) {
+    angle = angle + 45;
+  } else {
+    angle = angle - 45;
+  }
+  spinner.setAttribute(
+    "style",
+    "-webkit-transform: rotateY(" +
+      angle +
+      "deg); -moz-transform: rotateY(" +
+      angle +
+      "deg); transform: rotateY(" +
+      angle +
+      "deg);"
+  );
+}
+
+/*next.addEventListener("click", goLeft);
 function goLeft() {
   document.getElementById("carousel-recipes").style.backgroundColor = "white";
 }
 
-/*previous.addEventListener("click", goRight);
+previous.addEventListener("click", goRight);
 function goRight() {
-  document.getElementById("carousel-recipes").style.a
+  document.getElementById("carousel-recipes").style.a;
 }*/

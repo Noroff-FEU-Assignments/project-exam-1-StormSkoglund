@@ -8,9 +8,9 @@
   box-sizing: border-box;
 }*/
 
-.carousel-container {
+/*.carousel-container {
   position: relative;
-  width: 2000px;
+  width: 40%;
   height: 400px;
   border: var(--my-border);
   border-image: var(--my-golden-frame) 1;
@@ -19,27 +19,40 @@
 
 .carousel-container #carousel-recipes {
   width: 100%;
-  /*height: calc(100% - 40%);*/
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
 
-.carousel-container #carousel-recipes {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+.carousel-container #carousel-recipes #card {
   object-fit: cover;
 }
-
-.carousel-container #carousel-recipes img {
-  object-fit: cover;
-}
-.carousel-container #carousel-recipes img:not(.active) {
+/*.carousel-container #carousel-recipes img:not(.active) {
   top: 0;
   left: -100%;
+}*/
+
+/*carousel card*/
+/*#card {
+  max-width: 210px;
+  max-height: fit-content;
+  margin: 0.2em;
+  padding: 0.1em;
+  text-decoration: none;
+  border: var(--my-border-thick) var(--my-sky-blue);
 }
 
-.fa-solid {
+#card img {
+  max-width: 200px;
+  max-height: fit-content;
+  padding: 0.1;
+  margin: 0.2em;
+}
+#card p {
+  text-decoration: none;
+}
+
+/*.fa-solid {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -50,9 +63,10 @@
   transition: 500ms;
   border-radius: var(--my-border);
   user-select: none;
-  cursor: pointer;
+  */
+/*cursor: pointer;
   background-color: var(--my-light-gold);
-  opacity: 80%;*/
+  opacity: 80%;
 }
 
 .fa-arrow-right {
@@ -72,7 +86,7 @@
 }
 
 /*styling both title and images*/
-.card {
+/*.card {
   border: var(--my-border);
   border-image: var(--my-blue-frame) 1;
   box-shadow: var(--my-shadow-lighter);
@@ -92,4 +106,69 @@
 .api-image {
   box-shadow: var(--my-shadow-lighter);
   width: 200px;
+}
+*/
+
+/*code from codepen*/
+div#carousel {
+  perspective: 1200px;
+  background: #100000;
+  padding-top: 10%;
+  font-size: 0;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+figure#spinner {
+  transform-style: preserve-3d;
+  height: 300px;
+  transform-origin: 50% 50% -500px;
+  transition: 1s;
+}
+figure#spinner img {
+  width: 40%;
+  max-width: 425px;
+  position: absolute;
+  left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline: 1px solid transparent;
+}
+figure#spinner img:nth-child(1) {
+  transform: rotateY(0deg);
+}
+figure#spinner img:nth-child(2) {
+  transform: rotateY(-45deg);
+}
+figure#spinner img:nth-child(3) {
+  transform: rotateY(-90deg);
+}
+figure#spinner img:nth-child(4) {
+  transform: rotateY(-135deg);
+}
+figure#spinner img:nth-child(5) {
+  transform: rotateY(-180deg);
+}
+figure#spinner img:nth-child(6) {
+  transform: rotateY(-225deg);
+}
+figure#spinner img:nth-child(7) {
+  transform: rotateY(-270deg);
+}
+figure#spinner img:nth-child(8) {
+  transform: rotateY(-315deg);
+}
+div#carousel ~ span {
+  color: #fff;
+  margin: 5%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 0.6s color;
+  position: relative;
+  margin-top: -6rem;
+  border-bottom: none;
+  line-height: 0;
+}
+div#carousel ~ span:hover {
+  color: #888;
+  cursor: pointer;
 }

@@ -17,7 +17,6 @@ clickClose.addEventListener("click", function () {
   clickClose.style.visibility = "hidden";
   hamburgerMenu.style.visibility = "visible";
 });
-/*const modalClick = document.querySelector(".image1");*/
 
 // Error renderering function, this works in combination with the Try Catch statement below
 function tryCatchError(message) {

@@ -36,7 +36,7 @@ p {
   padding: 0.5em;
 }
 
-@media only screen and (max-width: 900px) and (min-width: 400px) {
+@media only screen and (max-width: 900px) and (min-width: 500px) {
   .article-framed {
     display: flex;
     justify-content: space-evenly;
@@ -61,7 +61,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .article-framed {
     display: flex;
     justify-content: space-evenly;
@@ -82,5 +82,14 @@ p {
     max-width: 40vw;
     font-size: 3.5px;
     margin: 0 auto;
+  }
+
+  h2 p {
+    max-width: 150px;
+  }
+
+  .disclaimer-end {
+    max-width: 200px;
+    text-align: center;
   }
 }
