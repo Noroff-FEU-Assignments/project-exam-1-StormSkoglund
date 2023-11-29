@@ -1,9 +1,7 @@
 import { carouselRecipe } from "./modules/fetch-recipes.js";
 import { tryCatchError } from "./modules/trycatcherror.js";
-const carouselSpinner = document.getElementById("spinner");
-const loader = document.querySelector(".loader");
-const next = document.getElementById("next");
-const previous = document.getElementById("previous");
+const carouselSpinner = document.querySelector(".api-images");
+const loader = document.getElementById("loader");
 const hamburgerMenu = document.getElementById("burger");
 const navList = document.getElementById("nav-list");
 const clickClose = document.getElementById("click-close");
@@ -27,12 +25,16 @@ async function renderRecipes() {
   try {
     const recipePosts = await carouselRecipe();
     console.log(recipePosts);
-    loader.innerHTML = ``;
+    if (recipePosts) {
+      loader.style.display = "none";
+    }
 
     const posts = recipePosts;
 
     posts.forEach((post) => {
-      carouselSpinner.innerHTML += `<img class="api-image" src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.alt_text}">`; //Sorting out images from the media endpoint for rendering.  I am using the plugin "Better REST API Featured Images" for better access to images.
+      carouselSpinner.innerHTML += `
+      <a href="/HTML/recipe-specific.html?id=${post.id}"><img class="api-image" src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.alt_text}"></img></a>
+    `;
     });
   } catch (error) {
     tryCatchError(error.message);
@@ -41,36 +43,17 @@ async function renderRecipes() {
 
 renderRecipes();
 
-tryCatchError();
+//This is my own JavaScript, that I have combined with a CSS only carousel from Codepen
 
-//carousel from Codepen
+const previous = document.querySelector(".prev");
+const next = document.querySelector(".next");
 
-var angle = 0;
-function galleryspin(sign) {
-  spinner = document.querySelector("#spinner");
-  if (!sign) {
-    angle = angle + 45;
-  } else {
-    angle = angle - 45;
-  }
-  spinner.setAttribute(
-    "style",
-    "-webkit-transform: rotateY(" +
-      angle +
-      "deg); -moz-transform: rotateY(" +
-      angle +
-      "deg); transform: rotateY(" +
-      angle +
-      "deg);"
-  );
-}
+next.addEventListener("click", function () {
+  carouselSpinner.style.animation = "slidy 8s forwards";
+  console.log("yay");
+});
 
-/*next.addEventListener("click", goLeft);
-function goLeft() {
-  document.getElementById("carousel-recipes").style.backgroundColor = "white";
-}
-
-previous.addEventListener("click", goRight);
-function goRight() {
-  document.getElementById("carousel-recipes").style.a;
-}*/
+previous.addEventListener("click", function () {
+  carouselSpinner.style.animation = "slidy 8s backwards";
+  console.log("huuray");
+});

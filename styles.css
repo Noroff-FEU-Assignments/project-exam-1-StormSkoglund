@@ -4,11 +4,11 @@
   --my-light-gold: #f4a910;
   --my-dark-gold: #c19c4e;
   --my-golden-black: #32312c;
-  --my-limestone: #ac7a57;
+  --my-limestone: #97633e;
   --my-sky-grey: #799aad;
   --my-sky-dark-grey: #5d686e;
   --my-sky-blue: #6bbbec;
-  --my-white: #ede7da;
+  --my-white: #f5f3ef;
   --my-border: 2px solid;
   --my-border-thick: 3px solid;
   --my-golden-frame: linear-gradient(
@@ -262,6 +262,7 @@ main {
   cursor: pointer;
   background-color: var(--my-light-gold);
   opacity: 80%;
+  z-index: 1; /*keep buttons in the foreground*/
 }
 
 .fa-solid:hover {
@@ -270,6 +271,18 @@ main {
   transition: ease-in-out 150ms;
   border: var(--my-border);
   border-radius: 100%;
+}
+
+.prev {
+  line-height: 30px;
+
+  z-index: 1;
+}
+
+.next {
+  line-height: 30px;
+
+  z-index: 1;
 }
 
 @media only screen and (max-width: 900px) and (min-width: 600px) {
