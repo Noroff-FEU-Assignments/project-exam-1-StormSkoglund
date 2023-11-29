@@ -156,7 +156,13 @@ div#slider figure {
 
 .next {
   position: relative;
-  top: 43%;
   max-width: 2em;
   max-height: 2em;
+}
+
+.carouselflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
