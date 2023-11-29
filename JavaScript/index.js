@@ -33,7 +33,7 @@ async function renderRecipes() {
 
     posts.forEach((post) => {
       carouselSpinner.innerHTML += `
-      <a href="/HTML/recipe-specific.html?id=${post.id}"><img class="api-image" src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.alt_text}"></img></a>
+      <a href="/HTML/recipe-specific.html?id=${post.id}"><img class="api-image" src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.alt_text}"/img></a>
     `;
     });
   } catch (error) {
@@ -49,11 +49,11 @@ const previous = document.querySelector(".prev");
 const next = document.querySelector(".next");
 
 next.addEventListener("click", function () {
-  carouselSpinner.style.animation = "slidy 8s forwards";
+  carouselSpinner.style.animation = "slides 6s forwards";
   console.log("yay");
 });
 
 previous.addEventListener("click", function () {
-  carouselSpinner.style.animation = "slidy 8s backwards";
+  carouselSpinner.style.animation = "slides-backwards 6s";
   console.log("huuray");
 });

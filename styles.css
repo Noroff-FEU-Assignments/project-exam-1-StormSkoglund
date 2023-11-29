@@ -25,6 +25,7 @@
   --my-shadow-light: 0px 8px 8px var(--my-sky-dark-grey);
   --my-shadow-lighter: 0px 2px 3px var(--my-sky-dark-grey);
   --my-shadow-card: -8px 8px 8px var(--my-sky-dark-grey);
+  --my-shadow-carousel: -10px 8px 12px var(--my-golden-black);
 }
 
 h1 {
@@ -271,18 +272,6 @@ main {
   transition: ease-in-out 150ms;
   border: var(--my-border);
   border-radius: 100%;
-}
-
-.prev {
-  line-height: 30px;
-
-  z-index: 1;
-}
-
-.next {
-  line-height: 30px;
-
-  z-index: 1;
 }
 
 @media only screen and (max-width: 900px) and (min-width: 600px) {

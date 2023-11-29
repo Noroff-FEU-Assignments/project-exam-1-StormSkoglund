@@ -109,18 +109,64 @@
 }
 */
 
-/*code from codepen*/
-@keyframes slidy {
+/*modified code from Dudley Storey at codepen, available https://codepen.io/dudleystorey/pen/kBrWvm[viewed 29-11-2023]*/
+@keyframes slides {
   0% {
     left: 0%;
   }
-
-  50% {
-    left: -50%;
+  20% {
+    left: 0%;
   }
-
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
   100% {
     left: -400%;
+  }
+}
+
+@keyframes slides-backwards {
+  0% {
+    left: -400%;
+  }
+  20% {
+    left: -400%;
+  }
+  25% {
+    left: -300%;
+  }
+  45% {
+    left: -300%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -100%;
+  }
+  95% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
   }
 }
 
@@ -130,16 +176,23 @@
 div#slider {
   margin-top: 2em;
   overflow: hidden;
-  width: 80%;
+  width: 100%;
   max-height: auto;
   border: var(--my-border);
   border-image: var(--my-golden-frame) 1;
   box-shadow: var(--my-shadow-light);
 }
 div#slider figure img {
-  width: 10%;
+  max-width: 10%;
+  max-height: fit-content;
   float: left;
+  box-shadow: var(--my-shadow-carousel);
 }
+
+.api-image:hover {
+  cursor: pointer;
+}
+
 div#slider figure {
   position: relative;
   width: 500%;
@@ -153,20 +206,31 @@ div#slider figure {
   /*animation-iteration-count: 1;*/
 }
 
-.prev {
+.fa-arrow-left {
   position: relative;
   max-width: 2em;
   max-height: 2em;
 }
 
-.next {
+.fa-arrow-left:hover {
+  opacity: 60%;
+  border: var(--my-border);
+}
+
+.fa-arrow-right {
   position: relative;
   max-width: 2em;
   max-height: 2em;
 }
 
-.prev .next {
-  opacity: 80%;
+.fa-arrow-right:hover {
+  opacity: 60%;
+  border: var(--my-border);
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
+  opacity: 75%;
 }
 
 .carouselflex {
@@ -179,4 +243,5 @@ div#slider figure {
 
 h2 {
   font-size: medium;
+  text-align: center;
 }
