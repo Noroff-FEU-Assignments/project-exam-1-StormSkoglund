@@ -132,6 +132,9 @@ div#slider {
   overflow: hidden;
   width: 80%;
   max-height: auto;
+  border: var(--my-border);
+  border-image: var(--my-golden-frame) 1;
+  box-shadow: var(--my-shadow-light);
 }
 div#slider figure img {
   width: 10%;
@@ -144,6 +147,8 @@ div#slider figure {
   left: 0;
   text-align: left;
   font-size: 10px;
+  border: var(--my-border-thick);
+  border-image: var(--my-golden-frame) 1;
   /*animation: 1000ms slidy;*/
   /*animation-iteration-count: 1;*/
 }
@@ -160,9 +165,18 @@ div#slider figure {
   max-height: 2em;
 }
 
+.prev .next {
+  opacity: 80%;
+}
+
 .carouselflex {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: nowrap;
+}
+
+h2 {
+  font-size: medium;
 }
