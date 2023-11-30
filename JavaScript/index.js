@@ -43,17 +43,17 @@ async function renderRecipes() {
 
 renderRecipes();
 
-//This is my own JavaScript, that I have combined with a CSS only carousel from Codepen
+//This is my own JavaScript, that I have combined with a CSS only carousel from from Dudley Storey at codepen, available https://codepen.io/dudleystorey/pen/kBrWvm[viewed 29-11-2023]*/
 
 const previous = document.querySelector(".prev");
 const next = document.querySelector(".next");
 
 next.addEventListener("click", function () {
-  carouselSpinner.style.animation = "slides 6s forwards";
+  carouselSpinner.style.animation = "slides 5.5s forwards";
   console.log("yay");
 });
 
 previous.addEventListener("click", function () {
-  carouselSpinner.style.animation = "slides-backwards 6s";
+  carouselSpinner.style.animation = "slides-backwards 5.5s";
   console.log("huuray");
 });
