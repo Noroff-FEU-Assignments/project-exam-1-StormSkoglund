@@ -328,7 +328,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 599px) and (min-width: 450px) {
+@media only screen and (max-width: 600px) and (min-width: 450px) {
   .article-framed {
     padding: 0.2em;
     max-width: 80vw;
@@ -339,6 +339,17 @@ main {
 
   .article-framed img {
     max-width: 95%;
+  }
+
+  /*index CTA button*/
+  .index {
+    background-image: url(/images/Image1-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+    font-size: large;
+    font-weight: bolder;
+    color: var(--my-white);
   }
 
   .pyramid {
@@ -396,6 +407,15 @@ main {
     margin: 0.5em;
     box-shadow: var(--my-shadow-lighter);
     transition: ease-in 150ms;
+  }
+  .index {
+    background-image: url(/images/Image1-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5em;
+    font-size: medium;
+    font-weight: bolder;
+    color: var(--my-white);
   }
 
   #click-close {

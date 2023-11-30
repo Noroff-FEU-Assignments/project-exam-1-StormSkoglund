@@ -79,6 +79,8 @@ div#slider figure img {
 
 .api-image:hover {
   cursor: pointer;
+  filter: grayscale(70%);
+  transition: 500ms;
 }
 
 div#slider figure {
