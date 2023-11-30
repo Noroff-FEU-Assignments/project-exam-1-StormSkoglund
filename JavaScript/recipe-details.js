@@ -69,7 +69,20 @@ async function renderRecipe() {
       image.addEventListener("click", function () {
         const clickImage = event.target.src;
         console.log(clickImage);
+        //this function is creating elements from target source and appending them to the DOM
         createModal(clickImage);
+        //click outside to close modal, solution below from codepen by handika, available at https://codepen.io/dhika345/pen/poeRqYM?editors=1010[viewed Nov 30. 2023]
+        /* const boolIsInside = document
+          .getElementById("dialog")
+          .contains(event.target);
+        if (boolIsInside) {
+          document.getElementById("dialog").classList.add("hide-visibility");
+          console.log("inside");
+        } else {
+          document.getElementById("dialog").classList.remove("hide-visibility");
+          console.log("outside");
+        }*/
+        //end of codepencode
       });
     });
   } catch (error) {
@@ -82,6 +95,7 @@ renderRecipe();
 function createModal(src) {
   // Here I am creating the dialog together with the selected images in event.taget.src, then appending them to the DOM.
   const modal = document.createElement("dialog");
+  modal.setAttribute("id", "dialog");
   document.querySelector("main").append(modal);
 
   const modalImage = document.createElement("img");
