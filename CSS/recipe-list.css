@@ -92,7 +92,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 399px) {
+@media only screen and (max-width: 400px) {
   h1 {
     font-size: medium;
   }
@@ -116,5 +116,16 @@ a {
 
   main {
     margin: 0;
+  }
+
+  /*footer span {
+    font-size: 5px;
+    max-width: fit-content;
+    text-align: center;
+    margin-top: 2em;
+  }*/
+
+  .recipes {
+    padding: 0.2em;
   }
 }
