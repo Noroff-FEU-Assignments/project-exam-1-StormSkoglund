@@ -1,3 +1,4 @@
+import { tryCatchError } from "./modules/trycatcherror.js";
 const articleContainer = document.querySelector(".article-container");
 const uniqueTitle = document.getElementById("unique-title");
 const modalContainer = document.querySelector(".image-modal");
@@ -17,12 +18,6 @@ clickClose.addEventListener("click", function () {
   clickClose.style.visibility = "hidden";
   hamburgerMenu.style.visibility = "visible";
 });
-
-// Error renderering function, this works in combination with the Try Catch statement below
-function tryCatchError(message) {
-  const renderError = document.querySelector(".error");
-  renderError.innerHTML = `An error has occurred: ${message}`;
-}
 
 // search params to Fetch ID from specific blogpost(recipe)
 const queryString = document.location.search;
