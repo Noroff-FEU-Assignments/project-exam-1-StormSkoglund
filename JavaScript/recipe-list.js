@@ -1,3 +1,4 @@
+import { tryCatchError } from "./modules/trycatcherror.js";
 const recipeList = document.querySelector(".recipe-container");
 const showMorePosts = document.getElementById("show-more");
 const noMorePosts = "You have reached the end of my recipe list :)";
@@ -18,10 +19,10 @@ clickClose.addEventListener("click", function () {
   hamburgerMenu.style.visibility = "visible";
 });
 
-function tryCatchError(message) {
+/*function tryCatchError(message) {
   const renderError = document.querySelector(".error");
   renderError.innerHTML = `An error has occurred: ${message}`;
-}
+}*/
 
 // This is an custom error i use in the very end, if the maximum numbers of pages has been reached.
 function tryCatchSecondError() {
@@ -49,7 +50,6 @@ async function retrieveRecipes() {
 async function renderRecipes() {
   try {
     const recipePosts = await retrieveRecipes();
-    console.log(recipePosts);
     document.getElementById("loading").style.display = "none";
 
     const posts = recipePosts;
