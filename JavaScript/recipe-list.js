@@ -82,7 +82,6 @@ let clickCount = 1; // I am starting this counter from 1, since i am going to ad
 
 showMorePosts.addEventListener("click", function addingPages() {
   clickCount++;
-  console.log(clickCount);
   localStorage.setItem("clicks", JSON.stringify(clickCount)); // saving the amount of clicks to localStorage
   showMore();
 });
@@ -100,8 +99,6 @@ async function showMore() {
     console.log(newUrl);
     const response = await fetch(newUrl);
     const newPage = await response.json();
-    console.log(newPage);
-
     const addPosts = newPage;
 
     addPosts.forEach((addPost) => {
