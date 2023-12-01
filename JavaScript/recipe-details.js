@@ -55,7 +55,6 @@ fetchRecipe;
 async function renderRecipe() {
   try {
     const myRecipe = await fetchRecipe();
-    console.log(myRecipe);
     document.getElementById("loading").style.display = "none";
 
     if (myRecipe) {
