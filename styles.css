@@ -101,19 +101,36 @@ a:hover {
   cursor: pointer;
 }
 /*index CTA button*/
-.index {
-  background-image: url(/images/Image1-contrast-min2-min.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 2em;
-  font-size: 60px;
+.index-link{
+  padding: 1.5em;
+  font-size: 40px;
+  margin: 0 auto;
+  text-align: center;
   font-weight: bolder;
-  color: var(--my-snow-white);
+  color: var(--my-golden-black);
   font-family: "Quattrocento Sans", sans-serif, "Trebuchet MS",
   "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.index:hover {
+.link-text{
+ border: var(--my-border-thick);
+ border-image: var(--my-golden-frame) 1;
+ box-shadow: var(--my-shadow-light);
+ padding: 0.5em;
+}
+
+.link-text:hover{
+  border: var(--my-border-thick);
+  border-image: var(--my-golden-frame) 1;
+  box-shadow: var(--my-shadow);
+  padding: 0.5em;
+  text-shadow: none;
+  transition: 400ms;
+  cursor: pointer;
+  
+ }
+
+.index-link:hover {
   padding: 2.5em;
   transition: 100ms;
   cursor: pointer;
@@ -300,6 +317,7 @@ main {
   transition: ease-in-out 150ms;
   border: var(--my-border);
   border-radius: 100%;
+  margin-bottom: 0.1em;
 }
 
 @media only screen and (max-width: 900px) and (min-width: 600px) {
@@ -308,14 +326,18 @@ main {
     max-width: 60vw;
   }
 
-  #Headerflex ul {
-    visibility: visible;
+  .index-link{
+    padding: 1em;
+    font-size: large;
+    font-weight: bold;
   }
 
-  .article-framed img {
-    max-width: 20em;
-    position: relative;
-    float: left;
+  .image-default{
+    max-width: 50vw;
+  }
+
+  #Headerflex ul {
+    visibility: visible;
   }
 
   .pyramid {
@@ -353,20 +375,16 @@ main {
     width: 70px;
   }
 
-  .article-framed img {
-    max-width: 95%;
+  .image-default{
+    max-width: 40vw;
   }
- 
 
   /*index CTA button*/
-  .index {
-    background-image: url(/images/Image1-min.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  .index-link {
     padding: 2em;
     font-size: large;
     font-weight: bolder;
-    color: var(--my-white);
+  
   }
 
   .slogan {
@@ -425,14 +443,15 @@ main {
     box-shadow: var(--my-shadow-lighter);
     transition: ease-in 150ms;
   }
-  .index {
-    background-image: url(/images/Image1-min.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  .index-link {
     padding: 1.5em;
     font-size: medium;
-    font-weight: bolder;
+    font-weight: bold;
     color: var(--my-white);
+  }
+
+  .image-default{
+    max-width: 35vw;
   }
 
   #click-close {
@@ -466,9 +485,7 @@ main {
     font-size: 9px;
     padding: 0.2em;
   }
-  .article-framed img {
-    max-width: 60vw;
-  }
+ 
   footer span {
     font-size: 8px;
     max-width: fit-content;
