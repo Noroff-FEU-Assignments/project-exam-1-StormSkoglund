@@ -49,11 +49,9 @@ const previous = document.querySelector(".prev");
 const next = document.querySelector(".next");
 
 next.addEventListener("click", function () {
-  carouselSpinner.style.animation = "slides 5.5s forwards";
-  console.log("yay");
+  carouselSpinner.style.animation = "slides 14s forwards";
 });
 
 previous.addEventListener("click", function () {
-  carouselSpinner.style.animation = "slides-backwards 5.5s";
-  console.log("huuray");
+  carouselSpinner.style.animation = "slides-backwards 14s";
 });
