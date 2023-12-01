@@ -105,10 +105,8 @@ a:hover {
   background-image: url(/images/Image1-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-text-stroke-width: 0.8px; 
-  -webkit-text-stroke-color: var(--my-golden-black); 
   padding: 5em;
-  text-shadow: var(--my-shadow-light);
+  text-shadow: 2px 2px 2px #080808;
   font-size: x-large;
   font-weight: bolder;
   color: var(--my-snow-white);
