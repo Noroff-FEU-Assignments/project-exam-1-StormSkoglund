@@ -8,6 +8,7 @@
   --my-sky-grey: #799aad;
   --my-sky-dark-grey: #5d686e;
   --my-sky-blue: #6bbbec;
+  --my-snow-white: #ffffff;
   --my-white: #f5f3ef;
   --my-border: 2px solid;
   --my-border-thick: 3px solid;
@@ -107,7 +108,7 @@ a:hover {
   padding: 6em;
   font-size: x-large;
   font-weight: bolder;
-  color: var(--my-white);
+  color: var(--my-snow-white);
 }
 
 .index:hover {
