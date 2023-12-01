@@ -118,14 +118,12 @@ a {
     margin: 0;
   }
 
-  /*footer span {
-    font-size: 5px;
-    max-width: fit-content;
-    text-align: center;
-    margin-top: 2em;
-  }*/
-
   .recipes {
     padding: 0.2em;
+  }
+
+  .recipes:hover {
+    padding: 0.1em;
+    background-color: var(--my-dark-gold);
   }
 }
