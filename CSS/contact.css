@@ -27,6 +27,7 @@ textarea {
   border: 2px solid var(--my-sky-blue);
   box-shadow: var(--my-shadow-lighter);
   padding: 0.5em;
+  resize: none;
 }
 
 label {
