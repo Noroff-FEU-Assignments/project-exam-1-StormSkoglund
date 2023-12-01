@@ -102,12 +102,11 @@ a:hover {
 }
 /*index CTA button*/
 .index {
-  background-image: url(/images/Image1-min.jpg);
+  background-image: url(/images/Image1-contrast-min.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 3em;
-  text-shadow: 2px 2px 2px #080808;
-  font-size: 40px;
+  padding: 2em;
+  font-size: 60px;
   font-weight: bolder;
   color: var(--my-snow-white);
   font-family: "Quattrocento Sans", sans-serif, "Trebuchet MS",
@@ -115,7 +114,7 @@ a:hover {
 }
 
 .index:hover {
-  padding: 3.5em;
+  padding: 2.5em;
   transition: 100ms;
   cursor: pointer;
 }
