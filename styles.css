@@ -105,9 +105,9 @@ a:hover {
   background-image: url(/images/Image1-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5em;
+  padding: 3em;
   text-shadow: 2px 2px 2px #080808;
-  font-size: x-large;
+  font-size: 40px;
   font-weight: bolder;
   color: var(--my-snow-white);
   font-family: "Quattrocento Sans", sans-serif, "Trebuchet MS",
@@ -115,7 +115,7 @@ a:hover {
 }
 
 .index:hover {
-  padding: 6.2em;
+  padding: 3.5em;
   transition: 100ms;
   cursor: pointer;
 }
