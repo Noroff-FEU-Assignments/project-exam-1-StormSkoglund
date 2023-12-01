@@ -24,7 +24,6 @@ carouselRecipe();
 async function renderRecipes() {
   try {
     const recipePosts = await carouselRecipe();
-    console.log(recipePosts);
     if (recipePosts) {
       loader.style.display = "none";
     }

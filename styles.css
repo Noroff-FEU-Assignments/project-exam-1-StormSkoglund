@@ -42,7 +42,7 @@ h3 {
     "Arial Narrow", Arial, sans-serif;
   font-size: 55px;
   color: var(--my-golden-black);
-  text-shadow: var(--my-shadow-lighter);
+  
 }
 
 body {
@@ -444,6 +444,10 @@ main {
     margin: 0.5em;
     box-shadow: var(--my-shadow-lighter);
     transition: 150ms ease-out;
+  }
+
+  .index-cite{
+    font-size: medium;
   }
 
   .front-flex-container {
