@@ -93,6 +93,7 @@ p {
 
   body  main  article.article-framed figure  figcaption p{
     font-size: 10px;
+    max-width: 40vw;
   }
 
   h2 p {

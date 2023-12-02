@@ -89,8 +89,7 @@ p {
     flex-wrap: wrap;
     margin: 0 auto;
     row-gap: 0em;
-    border: var(--my-border) var(--my-sky-blue);
-    box-shadow: var(--my-shadow-lighter);
+    border: none;
     padding: 1em;
   }
   input,
