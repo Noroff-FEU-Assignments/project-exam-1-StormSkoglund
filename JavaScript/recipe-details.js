@@ -65,18 +65,6 @@ async function renderRecipe() {
         console.log(clickImage);
         //this function is creating elements from target source and appending them to the DOM
         createModal(clickImage);
-        //click outside to close modal, solution below from codepen by handika, available at https://codepen.io/dhika345/pen/poeRqYM?editors=1010[viewed Nov 30. 2023]
-        /* const boolIsInside = document
-          .getElementById("dialog")
-          .contains(event.target);
-        if (boolIsInside) {
-          document.getElementById("dialog").classList.add("hide-visibility");
-          console.log("inside");
-        } else {
-          document.getElementById("dialog").classList.remove("hide-visibility");
-          console.log("outside");
-        }*/
-        //end of codepencode
       });
     });
   } catch (error) {
@@ -96,8 +84,11 @@ function createModal(src) {
   modalImage.setAttribute("src", src); //Setting modal image attributes to match the event.target.src attribute from the clicked image, in order to copy its source.
   modal.append(modalImage);
   modal.showModal(); //showModal method available at https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal[Viewed Nov 26. 2023]
-  modal.addEventListener("mouseout", function () {
-    // mouseout used for exiting the Modal, available at https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseout_event[Viewed on Nov 26. 2023]
-    modal.close();
-  });
+  // Adding code to close modal when clicking outside. Solution available at https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_close[Viewed Dec 02. 2023] 
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.close();
+    }}
 }
+
+
