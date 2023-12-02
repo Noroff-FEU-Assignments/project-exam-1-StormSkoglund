@@ -406,7 +406,9 @@ main {
   }
 }
 
-@media only screen and (max-width: 449px) {
+@media only screen and (max-width: 450px) {
+  
+ 
   #nav-list {
     visibility: hidden;
   }
@@ -468,21 +470,31 @@ main {
   }
 
   .index-cite{
-    font-size: medium;
+    font-size: large;
+    word-wrap: break-word;
   }
 
   .front-flex-container {
     margin-top: 2em;
+    margin-left: 0em;
+    margin-right: 0em;
     padding: 0.5em;
   }
 
+  main{
+    margin-left: 0em;
+    margin-right: 0em;
+    padding: 0em
+  }
+
   .article-framed {
-    max-width: 80%;
+    max-width: 90%;
+    margin: 0em;
   }
 
   .article-framed span {
     display: table;
-    font-size: 9px;
+    font-size: 14px;
     padding: 0.2em;
   }
  

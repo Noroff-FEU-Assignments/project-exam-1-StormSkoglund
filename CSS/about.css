@@ -45,6 +45,10 @@ p {
     align-items: flex-end;
   }
 
+  body  main  article.article-framed figure  figcaption p{
+    font-size: 12px;
+  }
+
   .article-framed p {
     font-size: medium;
   }
@@ -68,10 +72,13 @@ p {
     flex-wrap: wrap;
     align-content: center;
     align-items: flex-end;
+    max-width: 100%;
+    margin: 0em;
+    border: none;
   }
 
   .article-framed p {
-    font-size: small;
+    font-size: medium;
   }
 
   .article-framed img {
@@ -84,6 +91,10 @@ p {
     margin: 0 auto;
   }
 
+  body  main  article.article-framed figure  figcaption p{
+    font-size: 10px;
+  }
+
   h2 p {
     max-width: 150px;
   }
@@ -91,5 +102,13 @@ p {
   .disclaimer-end {
     max-width: 200px;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  figure {
+    max-width: 80vw;
+    font-size: 3.5px;
+    margin: 0 auto;
   }
 }

@@ -95,6 +95,7 @@ a {
 @media only screen and (max-width: 400px) {
   h1 {
     font-size: medium;
+    margin-top: 2em;
   }
   .card {
     max-width: fit-content;
@@ -107,6 +108,12 @@ a {
     box-shadow: var(--my-shadow-lighter);
     max-width: 80px;
     margin: 0 auto;
+  }
+
+  #show-more {
+    position: relative;
+    text-align:center;
+    float: right;
   }
 
   p {
@@ -126,4 +133,9 @@ a {
     padding: 0.1em;
     background-color: var(--my-dark-gold);
   }
+
+  #Footerflex{
+    margin-top: 2em;
+  }
+
 }
