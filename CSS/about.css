@@ -113,3 +113,24 @@ p {
     margin: 0 auto;
   }
 }
+@media only screen and (max-width: 3500px) and (min-width: 1921px) {
+  body  main  article.article-framed figure  figcaption p{
+    font-size: 20px;
+    max-width: 40vw;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: x-large;
+  }
+
+  .article-framed p {
+    font-size: 35px;
+    max-width: 40%;
+    margin: 5% auto
+  }
+
+  #disclaimer p {
+    max-width: 50vw;
+    font-size: 25px;
+}

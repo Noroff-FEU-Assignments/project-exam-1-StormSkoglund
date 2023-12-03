@@ -81,7 +81,7 @@ a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 10%;
+  width: 8%;
   margin-top: -4em;
 }
 
@@ -100,6 +100,10 @@ a:hover {
   transition: 400ms;
   cursor: pointer;
 }
+.front-flex-container h1{
+  font-size: xx-large;
+}
+
 /*index CTA button*/
 .index-link{
   padding: 1.5em;
@@ -127,7 +131,10 @@ a:hover {
   text-shadow: none;
   transition: 400ms;
   cursor: pointer;
-  
+ }
+
+ .front-flex-container h2{
+  font-size: x-large;
  }
 
 .index-link:hover {
@@ -470,7 +477,7 @@ main {
   }
 
   .index-cite{
-    font-size: large;
+    font-size: larger;
     word-wrap: break-word;
   }
 
@@ -525,3 +532,32 @@ main {
 
   
 }
+@media only screen and (max-width: 3500px) and (min-width: 1921px) {
+  .title {
+    font-size: 80px;
+  }
+  .slogan {
+    font-size: 25px;
+  }
+ 
+  .pyramid{
+    max-width: 250px;
+  }
+
+  #Footerflex, span{
+    font-size: 25px;
+  }
+
+  .regular-anchor{
+    font-size: 40px;
+  }
+  
+  h1{
+    font-size: 60px;
+  }
+
+  .link-text{
+    font-size: x-large;
+  }
+}
+

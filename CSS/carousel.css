@@ -1,5 +1,7 @@
 @import "/styles.css";
 
+
+
 /*modified code from Dudley Storey at codepen, available https://codepen.io/dudleystorey/pen/kBrWvm[viewed 29-11-2023]*/
 @keyframes slides {
   0% {
@@ -132,4 +134,78 @@ div#slider figure {
 h2 {
   font-size: medium;
   text-align: center;
+}
+
+@media only screen and (max-width: 3500px) and (min-width: 1921px) {
+
+  .article-framed span{
+    font-size: x-large;
+
+  }
+
+  @keyframes slides {
+    0% {
+      left: 0%;
+    }
+    20% {
+      left: -50%;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -150%;
+    }
+    70% {
+      left: -150%;
+    }
+    75% {
+      left: -200%;
+    }
+    95% {
+      left: -200%;
+    }
+    100% {
+      left: -210%;
+    }
+  }
+  
+  @keyframes slides-backwards {
+    0% {
+      left: -210%;
+    }
+    20% {
+      left: -200%;
+    }
+    25% {
+      left: -200%;
+    }
+    45% {
+      left: -150%;
+    }
+    50% {
+      left: -150%;
+    }
+    70% {
+      left: -100%;
+    }
+    75% {
+      left: -100%;
+    }
+    95% {
+      left: -50%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+
+
+  .fa-solid{
+  padding: 3em;
+  opacity: none;
+}
 }

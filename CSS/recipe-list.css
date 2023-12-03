@@ -139,3 +139,32 @@ a {
   }
 
 }
+
+@media only screen and (max-width: 3500px) and (min-width: 1921px) {
+
+
+  .card{
+    max-width: fit-content;
+    height: 600px;
+  }
+ .api-image{
+  max-width: 400px;
+ }
+
+ p{
+  max-width: 400px;
+  font-size: 30px;
+ }
+
+ .date {
+  font-size: large;
+  font-weight: bold;
+  border: 2px solid var(--my-dark-gold);
+  opacity: 100%;
+  box-shadow: var(--my-shadow-lighter);
+}
+
+#show-more {
+  font-size: x-large;
+}
+}
