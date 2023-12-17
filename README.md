@@ -10,14 +10,15 @@ Ancient Recipes: This blog-site was built with an educational purpose in mind, r
 -HTML
 -CSS
 -JavaScript
-
-## Getting Started
+-WordPress as a Content Management System (CMS).
 
 ### Running
 
 How to launch my site:
 
 Please install the "Live Server" Plugin via your extensions menu in Visual Studio Code, or copy the path of the index.html file and paste it directly in your browser. You can also drag and drop the index.html into your browser.
+
+Or simply go to https://project-exam-1-fall23.netlify.app/html/recipes to view the website.
 
 ## Contact
 
