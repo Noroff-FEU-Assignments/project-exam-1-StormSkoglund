@@ -3,7 +3,7 @@ My third website.
 
 
 ## Description
-Ancient Recipes: This blog-site was built with an educational purpose in mind, rather than that of a platform for an influencer. The content consisted of a multitude of different ancient recipes, served alongside plenty of historical facts. In this project, WordPress was used as a Content Management System, for the recipes or blog post that gets displayed the Ancient Recipes site. The recipes themselves, were generated with the assistance of AI. A full disclaimer is included in the about section on the site.
+Ancient Recipes: This blog-site was built with an educational purpose in mind, rather than that of a platform for an influencer. The content consisted of a multitude of different ancient recipes, served alongside plenty of historical facts. In this project, WordPress was used as a Content Management System, for the recipes or blog post that gets displayed the Ancient Recipes site. The recipes themselves, were generated with AI assistance. A full disclaimer is included in the about section on the site.
 
 ## Built With
 
