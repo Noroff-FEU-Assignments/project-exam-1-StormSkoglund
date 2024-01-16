@@ -1,4 +1,6 @@
 # Ancient Recipes
+![ProjectExam](https://github.com/Noroff-FEU-Assignments/project-exam-1-StormSkoglund/assets/125978969/6e93fa57-f2c0-4e0a-8d83-effd4b978981)
+
 My third website.
 
 
